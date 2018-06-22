@@ -77,9 +77,9 @@ grep -i "Chile" players.csv | cut -d ',' -f3 | sort |uniq -c
 
 * Luego nos conectamos vía ssh al nodo master
 
-* Instalar Git
+* Listamos los nodos
 ```
-sudo apt-get install git
+hdfs dfsadmin -report
 ```
 
 * Descargar este repo de github
@@ -124,12 +124,12 @@ hdfs dfs -ls /texto-out
 
 * Generamos un archivo con el resultado completo
 ```
-hadoop fs -getmerge /texto-out/ resultado.txt
+hadoop fs -getmerge /texto-out/ ~/resultado.txt
 ```
 
 * Vemos el resultado
 ```
-cat resultado.txt
+cat ~/resultado.txt
 ```
 
 
