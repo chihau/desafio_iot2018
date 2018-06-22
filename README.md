@@ -13,52 +13,52 @@ git clone https://github.com/chihau/desafio_iot2018.git
 
 * Ver las primeras 10 líneas de un archivo
 ```
-head -10 Players.csv
+head -10 players.cvs
 ```
 
 * Ver las últimas 10 líneas de un archivo
 ```
-head -10 Players.csv
+head -10 players.cvs
 ```
 
 * Contar los caracteres, palabras y líneas
 ```
-wc Players.csv
+wc players.cvs
 ```
 
 * Contar las líneas
 ```
-wc -l Players.csv
+wc -l players.cvs
 ```
 
 * Mostrar las líneas que contienen la palabra "vidal"
 ```
-grep -i "vidal" Players.csv
+grep -i "vidal" players.cvs
 ```
 
 * Mostrar la cantidad de jugadores chilenos
 ```
-grep -i “chile” Players.csv | wc -l
+grep -i “chile” players.cvs | wc -l
 ```
 
 * Reemplazar las comas por tabs
 ```
-grep -i "Chile" Players.csv | tr ',' '\t'
+grep -i "Chile" players.cvs | tr ',' '\t'
 ```
 
 * Mostrar sólo la primera columna (nombre del jugador)
 ```
-grep -i "Chile" Players.csv | cut -d ',' -f1
+grep -i "Chile" players.cvs | cut -d ',' -f1
 ```
 
 * Mostrar las 3 primeras columna (nombre del jugador, país y posición)
 ```
-grep -i "Chile" Players.csv | cut -d ',' -f1-3
+grep -i "Chile" players.cvs | cut -d ',' -f1-3
 ```
 
 * Mostrar la cantidad de jugadores chilenos, que jugaron algún partido según su posición
 ```
-grep -i "Chile" Players.csv | cut -d ',' -f3 | sort |uniq -c
+grep -i "Chile" players.cvs | cut -d ',' -f3 | sort |uniq -c
 ```
 
 ### Hadoop con Dataproc
