@@ -27,3 +27,7 @@ wget https://raw.githubusercontent.com/chihau/desafio_iot2018/master/ubidots/ubi
 ```
 python ubidots_test.py
 ```
+
+* Puedes chequear en la sección Devices si es que aparece tu dispositivo y si es que está capturando datos de la variable temperature
+
+* Luego puedes crear un dashboard para visualizar los datos
