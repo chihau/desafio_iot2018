@@ -18,7 +18,7 @@ git clone https://github.com/chihau/desafio_iot2018.git
 
 * Ir al directorio descargado
 ```
-cd desafio_iot2018
+cd desafio_iot2018/bigdata_hadoop
 ```
 
 * Ver las primeras 10 líneas de un archivo
@@ -89,7 +89,7 @@ git clone https://github.com/chihau/desafio_iot2018.git
 
 * Formateamos el texto
 ```
-cat ~/desafio_iot2018/a_la_una_violeta_parra.txt | tr 'A-Z' 'a-z' | tr -d , | tr -d . > ~/violeta.txt
+cat ~/desafio_iot2018/bigdata_hadoop/a_la_una_violeta_parra.txt | tr 'A-Z' 'a-z' | tr -d , | tr -d . > ~/violeta.txt
 ```
 
 * Vamos al directorio
