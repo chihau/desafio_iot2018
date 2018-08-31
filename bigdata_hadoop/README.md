@@ -132,4 +132,7 @@ hadoop fs -getmerge /texto-out/ ~/resultado.txt
 cat ~/resultado.txt
 ```
 
-
+* Podemos ordenar el resultado en base a la cantidad de coincidencias
+```
+sort -t$'\t' -k3 -nr ~/resultado.txt
+```
